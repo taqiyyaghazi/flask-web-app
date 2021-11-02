@@ -2,7 +2,7 @@ from flask import Flask
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET KEY'] = 'qwertyuiop' #Inisiasi secret key -> Secret key bebas
+    app.config['SECRET_KEY'] = 'qwertyuiop' #Inisiasi secret key -> Secret key bebas
 
     from .views import views
     from .auth import auth
